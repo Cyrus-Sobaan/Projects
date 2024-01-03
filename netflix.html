@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300&display=swap');
+    </style>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .main {
+            background-image: url(assets/bgimage.jpg);
+            background-position: center center;
+            background-size: max(1700px, 100vw);
+            background-repeat: no-repeat;
+            height: 99.9vh;
+            position: relative;
+        }
+
+        .box {
+            height: 99.9vh;
+            width: 100%;
+            opacity: 0.64;
+            position: absolute;
+            top: 0;
+            background-color: black;
+        }
+
+        nav {
+            max-width: 75vw;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 62px;
+        }
+
+        nav img {
+            margin-top: 25px;
+            color: red;
+            width: 147px;
+            position: relative;
+            z-index: 10;
+        }
+
+        nav button {
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero {
+            font-family: 'Martel Sans', sans-serif;
+
+            height: calc(100% - 62px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            position: relative;
+            gap: 23px;
+            padding: 0px 30px;
+
+        }
+
+        .hero> :nth-child(1) {
+            font-weight: bolder;
+            font-size: 48px;
+        }
+
+        .hero> :nth-child(2) {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .hero> :nth-child(3) {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .separation {
+            height: 11px;
+            background-color: grey;
+        }
+
+        .btn {
+            padding: 3px 8px;
+            font-weight: bold;
+            background-color: rgba(23, 23, 23, 0.6);
+            color: white;
+            border: 1px solid white;
+            border-radius: 4px;
+            cursor: pointer;
+
+        }
+
+        .btn-red-dm {
+            background-color: red;
+            color: white;
+        }
+
+        .btn-red {
+            background-color: red;
+            color: white;
+            padding: 13px 27px;
+            font-size: 20px;
+            border-radius: 4px;
+        }
+
+        .main input {
+            background-color: rgba(23, 23, 23, 0.6);
+            padding: 14px 101px 14px 14px;
+            font-size: 15px;
+            border-radius: 4px;
+            font-weight: 900;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            color: white;
+        }
+
+        .hero-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .first {
+            display: flex;
+            justify-content: center;
+            max-width: 70vw;
+            margin: auto;
+            color: white;
+
+            align-items: center;
+        }
+
+        .secimg {
+            position: relative;
+            top: 20px;
+        }
+
+        .secimg img {
+            width: 30vw;
+            z-index: 10;
+
+
+        }
+
+        .secimg video {
+            width: 22vw;
+            position: absolute;
+            top: 70px;
+            right: 63px;
+
+        }
+        section.first > div{
+            display: flex;
+            flex-direction: column;
+        }
+        section.first > div :nth-child(1){
+            font-size: 48px;
+            font-weight: bolder;
+        }
+
+        section.first > div :nth-child(2){
+            font-size: 24px;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <nav>
+            <span><img src="assets/logo.svg" alt=""></span>
+            <div>
+                <button class="btn">English</button>
+                <button class="btn btn-red-dm">Sign in</button>
+            </div>
+        </nav>
+
+        <div class="box">
+
+        </div>  
+
+        <div class="hero">
+
+            <span style="text-align: center;">Enjoy big movies, hit series and more from ₹149.</span>
+            <span style="text-align: center;">Join today. Cancel anytime.</span>
+
+            <span style="text-align: center;">Ready to watch? Enter your email to create or restart your
+                membership.</span>
+            <div class="hero-buttons">
+                <input type="text" placeholder="Email Address">
+                <button class="btn btn-red">Get started</button>
+            </div>
+        </div>
+        <div class="separation">
+
+        </div>
+    </div>
+    <!-- The Section -->
+    <section class="first">
+        <div>
+            <span>Enjoy on your TV</span>
+           <span> Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</span>
+        </div>
+
+        <div class="secimg">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+
+            <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                muted autoplay loop></video>
+        </div>
+
+    </section>
+</body>
+
+</html>
