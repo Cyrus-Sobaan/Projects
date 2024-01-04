@@ -14,7 +14,8 @@
         * {
             margin: 0px;
             padding: 0px;
-            font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;;
+            font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+            ;
         }
 
         body {
@@ -144,7 +145,7 @@
             height: 80vh;
             margin: auto;
             color: white;
-           
+
 
             align-items: center;
         }
@@ -168,48 +169,85 @@
             right: 63px;
 
         }
-        section.first > div{
+
+        section.first>div {
             display: flex;
             flex-direction: column;
         }
-        section.first > div :nth-child(1){
+
+        section.first>div :nth-child(1) {
             font-size: 48px;
             font-weight: bolder;
         }
 
-        section.first > div :nth-child(2){
+        section.first>div :nth-child(2) {
             font-size: 24px;
 
         }
-        .faQ h2{
+
+        .faQ h2 {
             font-size: 48px;
             font-weight: 900;
             margin-bottom: 30px;
         }
-        .faQ{
+
+        .faQ {
             background-color: black;
             color: white;
             text-align: center;
             padding: 60px;
             font-style: normal;
-            
+
         }
-        .faqbox{
-            display:flex ;
+
+        .faqbox {
+            display: flex;
             justify-content: space-between;
-            background-color:rgb(50, 49, 49) ;
+            background-color: rgb(50, 49, 49);
             color: white;
             padding: 24px;
             max-width: 75vw;
             margin: 10px auto;
         }
-        .faqbox svg{
+
+        .faqbox svg {
             filter: invert(1);
         }
-        .faqbox:hover{
-            background-color:rgb(68, 66, 66) ;
+
+        .faqbox:hover {
+            background-color: rgb(68, 66, 66);
         }
-        
+
+        footer {
+            color: white;
+        }
+
+        footer span{
+            max-width:60vw;
+            margin: auto;
+          
+        }
+
+        .footer {
+            display: flex;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            color: white;
+            justify-content: space-around;
+            max-width:60vw;
+            margin: auto;
+
+        }
+
+        .footer-items {
+            
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-items a{
+            color: rgb(154, 149, 149);
+            line-height: 30px;
+        }
     </style>
 </head>
 
@@ -226,7 +264,7 @@
 
         <div class="box">
 
-        </div>  
+        </div>
 
         <div class="hero">
 
@@ -248,16 +286,17 @@
     <section class="first">
         <div>
             <span>Enjoy on your TV</span>
-           <span> Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</span>
+            <span> Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</span>
         </div>
 
         <div class="secimg">
             <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
 
-           <div>
-            <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
-            muted autoplay loop></video>
-           </div>
+            <div>
+                <video
+                    src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                    muted autoplay loop></video>
+            </div>
         </div>
 
     </section>
@@ -266,12 +305,12 @@
     <!-- The Section second -->
     <section class="first">
         <div class="secimg">
-            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt=""> 
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="">
         </div>
-        
+
         <div>
             <span>Download your shows to watch offline</span>
-           <span> Save your favourites easily and always have something to watch.</span>
+            <span> Save your favourites easily and always have something to watch.</span>
         </div>
 
     </section>
@@ -281,16 +320,18 @@
     <section class="first">
         <div>
             <span>Enjoy on your TV</span>
-           <span> Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</span>
+            <span> Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</span>
         </div>
 
         <div class="secimg">
-            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png" alt="">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
+                alt="">
 
-           <div>
-            <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v"
-            muted autoplay loop></video>
-           </div>
+            <div>
+                <video
+                    src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v"
+                    muted autoplay loop></video>
+            </div>
         </div>
 
     </section>
@@ -298,16 +339,18 @@
 
     <!-- The Section fourth-->
     <section class="first">
-        
+
         <div class="secimg">
-          <img src="https://occ-0-6546-3647.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d" alt="">
+            <img src="https://occ-0-6546-3647.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d"
+                alt="">
         </div>
-            
-           
-            <div>
-                <span>Create profiles for kids</span>
-               <span> Send children on adventures with their favourite characters in a space made just for them—free with your membership.</span>
-            </div>
+
+
+        <div>
+            <span>Create profiles for kids</span>
+            <span> Send children on adventures with their favourite characters in a space made just for them—free with
+                your membership.</span>
+        </div>
 
     </section>
     <div class="separation"></div>
@@ -316,55 +359,88 @@
         <div class="faqbox">
             <h3>What is NetFlix?</h3>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                
+                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
         </div>
         <div class="faqbox">
             <h3>How much does Netflix cost?</h3>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                
+                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
         </div>
         <div class="faqbox">
             <h3>Where can I watch?</h3>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                
+                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
         </div>
         <div class="faqbox">
             <h3>How do I cancel?</h3>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                
+                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
         </div>
         <div class="faqbox">
             <h3>What can I watch on Netflix?</h3>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                
+                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
         </div>
         <div class="faqbox">
             <h3>Is Netflix good for kids?</h3>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                
+                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
         </div>
     </section>
+    <div class="separation"></div>
+    <footer>
+        <span>
+            Questions? Call 000-800-919-1694
+        </span>
+        <div class="footer">
+            <div class="footer-items">
+                <a href="faq">FAQ</a>
+                <a href="faq">Investor Relations</a>
+                <a href="faq">Privacy</a>
+                <a href="faq">Speed Test</a>
+
+            </div>
+            <div class="footer-items">
+                <a href="faq">Help Centre</a>
+                <a href="faq">Jobs</a>
+                <a href="faq">Cookie Preferences</a>
+                <a href="faq">Legal Notices</a>
+
+            </div>
+            <div class="footer-items">
+                <a href="faq">Legal Notices</a>
+                <a href="faq">Ways to Watch</a>
+                <a href="faq">Corporate Information</a>
+                <a href="faq">Only on Netflix</a>
+            </div>
+            <div class="footer-items">
+                <a href="faq">Media Centre</a>
+                <a href="faq">Terms of Use</a>
+                <a href="faq">Contact Us</a>
+            </div>
+        </div>
+    </footer>
 
 
-    
+
 </body>
 
 </html>
