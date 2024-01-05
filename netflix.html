@@ -25,7 +25,7 @@
         .main {
             background-image: url(assets/bgimage.jpg);
             background-position: center center;
-            background-size: max(1700px, 100vw);
+            background-size: max(1200px, 100vw);
             background-repeat: no-repeat;
             height: 99.9vh;
             position: relative;
@@ -46,7 +46,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 62px;
+            height: 100px;
         }
 
         nav img {
@@ -65,7 +65,7 @@
         .hero {
             font-family: 'Martel Sans', sans-serif;
 
-            height: calc(100% - 62px);
+            height: calc(100% - 100px);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -78,45 +78,55 @@
         }
 
         .hero> :nth-child(1) {
+            font-family: 'Poppins', sans-serif;
             font-weight: bolder;
             font-size: 48px;
+            text-align: center;
         }
 
         .hero> :nth-child(2) {
-            font-weight: bold;
+            font-weight: 400;
             font-size: 20px;
+            text-align: center;
         }
 
         .hero> :nth-child(3) {
             font-weight: bold;
             font-size: 20px;
+            text-align: center;
         }
 
         .separation {
             height: 7px;
             background-color: rgb(39, 38, 38);
+            position: relative;
+            z-index: 20;
         }
 
         .btn {
-            padding: 3px 8px;
-            font-weight: bold;
+            padding: 5px 13px;
+            
             background-color: rgba(23, 23, 23, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.4);
             color: white;
-            border: 1px solid white;
+            margin-right: 20px;
             border-radius: 4px;
             cursor: pointer;
+            font-size: 14px;
 
         }
 
         .btn-red-dm {
             background-color: red;
+            border-color: red;
             color: white;
         }
 
         .btn-red {
             background-color: red;
+            border-color: red;
             color: white;
-            padding: 13px 27px;
+            padding: 10px 27px;
             font-size: 20px;
             border-radius: 4px;
         }
@@ -126,7 +136,7 @@
             padding: 14px 101px 14px 14px;
             font-size: 15px;
             border-radius: 4px;
-            font-weight: 900;
+
             border: 1px solid rgba(255, 255, 255, 0.4);
             color: white;
         }
@@ -145,40 +155,55 @@
             height: 80vh;
             margin: auto;
             color: white;
-
-
             align-items: center;
+        }
+
+        @media screen and (max-width:1217px) {
+
+            .first {
+                flex-wrap: wrap;
+            }
         }
 
         .secimg {
             position: relative;
-            top: 20px;
+
         }
 
         .secimg img {
-            width: 30vw;
+            width: 460px;
             z-index: 10;
-
-
+            position: relative;
         }
 
         .secimg video {
-            width: 22vw;
+
             position: absolute;
-            top: 70px;
-            right: 63px;
+            top: 51px;
+            right: 0px;
+            width: 459px;
+
+        }
+        .secvid2 video{
+            
+            position: absolute;
+            top: 51px;
+            right:80px;
+            width: 292px;
 
         }
 
         section.first>div {
             display: flex;
             flex-direction: column;
+            padding: 34px 0px;
         }
 
         section.first>div :nth-child(1) {
             font-size: 48px;
             font-weight: bolder;
         }
+
 
         section.first>div :nth-child(2) {
             font-size: 24px;
@@ -208,6 +233,7 @@
             padding: 24px;
             max-width: 75vw;
             margin: 10px auto;
+            cursor: pointer;
         }
 
         .faqbox svg {
@@ -216,38 +242,114 @@
 
         .faqbox:hover {
             background-color: rgb(68, 66, 66);
+            color: white;
         }
 
         footer {
             color: white;
+            max-width: 78vw;
+            margin: auto;
+            height: 60vh;
+
         }
 
-        footer span{
-            max-width:60vw;
-            margin: auto;
-          
+        footer .question {
+            padding: 60px 0px 20px;
+            color: rgb(154, 149, 149);
         }
 
         .footer {
-            display: flex;
+            display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             color: white;
-            justify-content: space-around;
-            max-width:60vw;
-            margin: auto;
-
         }
+
+        @media screen and (max-width: 1300px) {
+
+            .footer {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 25px;
+            }
+        }
+
+
 
         .footer-items {
-            
             display: flex;
             flex-direction: column;
+            gap: 20px;
         }
 
-        .footer-items a{
+        .footer-items a {
+            font-size: 14px;
             color: rgb(154, 149, 149);
-            line-height: 30px;
+
         }
+
+        .end {
+            padding: 5px 13px;
+            margin-top: 20px;
+            background-color: rgba(23, 23, 23, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 1300px) {
+
+            nav {
+                max-width: 90vw;
+            }
+
+            .first {
+                flex-wrap: wrap;
+            }
+
+            .secImg img {
+                width: 305px;
+            }
+
+            .secImg video {
+                width: 305px;
+            }
+
+            .hero> :nth-child(1) {
+                font-size: 32px;
+            }
+
+            .hero> :nth-child(2) {
+                font-size: 18px;
+            }
+
+            .hero> :nth-child(3) {
+                font-size: 18px;
+            }
+
+            .hero-buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 16px;
+            }
+
+            .faq h2 {
+                text-align: center;
+                font-size: 32px;
+            }
+
+            footer {
+                max-width: 90vw;
+                padding: 75px 0;
+            }
+
+            .footer-item {
+                align-items: center;
+            }
+         }
     </style>
 </head>
 
@@ -327,7 +429,7 @@
             <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
                 alt="">
 
-            <div>
+            <div class="secvid2">
                 <video
                     src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v"
                     muted autoplay loop></video>
@@ -407,9 +509,9 @@
     </section>
     <div class="separation"></div>
     <footer>
-        <span>
+        <div class="question">
             Questions? Call 000-800-919-1694
-        </span>
+        </div>
         <div class="footer">
             <div class="footer-items">
                 <a href="faq">FAQ</a>
@@ -437,6 +539,10 @@
                 <a href="faq">Contact Us</a>
             </div>
         </div>
+        <div>
+            <button class="end">English</button>
+        </div>
+
     </footer>
 
 
