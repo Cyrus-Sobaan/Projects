@@ -402,5 +402,19 @@
         border-radius: 50px;
         background-image: linear-gradient(to right, rgb(5, 184, 220), rgb(37, 222, 222), rgb(0, 247, 206));
     }
+
+    .section-eight{
+        border: 1px solid black;
+        display:flex;   
+        justify-content:center; 
+        gap:100px;
+        line-height:30px;
+        padding:150px 0px;
+        font-size:14px;
+       
+    }
+    .div nth-child(3){
+        text-decoration:none;
+    }
     
 
