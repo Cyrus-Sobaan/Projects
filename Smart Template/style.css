@@ -73,7 +73,7 @@
 
     .main-container {
         background-color: rgb(239, 241, 243);
-        height: 120vh;
+      padding:30px 0px;
     }
 
     .box1 {
@@ -134,14 +134,14 @@
         border: 0px solid black;
         width: 70%;
         margin: auto;
-        padding: 40px 0px;
+        padding-top: 40px;
 
     }
 
     .section-2 {
         border: 0px solid black;
         text-align: center;
-        padding: 100px 0px;
+        padding-top: 100px;
     }
 
     .section-2 h1 {
