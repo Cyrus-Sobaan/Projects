@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family:sans-serif;
 }
 
 body {
@@ -65,19 +66,35 @@ ul {
     margin: 20px 0px;
     font-size: 30px;
 }
+.section-3 ul{
+    type:1;
+}
 
 .section-4 {
-    line-height: 30px;
-    display: flex;
-    justify-content: space-around;
+   
 }
 
 .section-4 h2 {
     color: rgb(126, 55, 55);
-
+   
     font-size: 30px;
 }
 
 b {
     color: rgb(126, 55, 55);
+   
+}
+.section-4-box {
+    border: 1ps solid black;
+    line-height: 30px;
+    width: 60%;
+
+    justify-content: space-around;
+}
+
+.section-3 ol {
+    padding: 0px 30px;
+    margin-bottom: 30px;
+   
+    
 }
