@@ -16,7 +16,7 @@
         background: linear-gradient(45deg,rgb(0, 0, 0),rgb(46, 46, 63));
     }
     .calculator{
-        width: 25%;
+        width: 25vw;
         border: 1px solid #717377;
         padding: 20px;
         border-radius: 15px;
