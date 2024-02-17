@@ -10,6 +10,17 @@
     * {
         padding: 0px;
         margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h5 {
+        font-weight: bolder;
     }
 
     .section-1 {
@@ -21,14 +32,7 @@
         text-align: center;
         margin: 80px 0px;
         line-height: 50px;
-    }
-
-    .sec-1 h1,
-    h5 {
-        font-family: sans-serif;
         color: #fff;
-        text-align: center;
-
     }
 
     .DOWNLOAD {
@@ -63,9 +67,49 @@
         background-color: rgb(97, 202, 167);
         cursor: pointer;
     }
+
+
+    .section-2 {
+
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    hr {
+        width: 5%;
+        margin: 15px auto;
+        border: 1px solid rgb(97, 202, 167 );
+    }
+
+    .section-2 h1 {
+        margin-bottom: 20px;
+    }
+
+    .section-2 p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .sec-2 {
+        width: 60vw;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    }
+
+    .sec-2 h4 {
+        margin: 20px;
+    }
+
+    .sec-2 p {
+        font-size: 12px;
+        line-height: 15px;
+    }
 </style>
 
 <body>
+    <!--section first starts here-->
     <div class="section-1">
         <header>
             <nav>
@@ -85,7 +129,36 @@
             <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
             <button class="DOWNLOAD">DOWNLOAD</button>
         </div>
+    </div>
+    <!--section first ends here-->
 
+    <!--section second starts from here-->
+    <div class="section-2">
+        <h1>OUR SERVICES</h1>
+        <hr>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed maxime fugit</p>
+        <p> quasi eum tempore sequi perspiciatis.</p>
+
+        <div class="sec-2">
+            <div class="box">
+                <h4>Content Writing</h4>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <p> adipisicing elit. Numquam earum vel </p>
+                <p> officiis eveniet veritatis!</p>
+            </div>
+            <div class="box">
+                <h4>Web Development</h4>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <p> adipisicing elit. Numquam earum vel </p>
+                <p> officiis eveniet veritatis!</p>
+            </div>
+            <div class="box">
+                <h4>Business Consultancy</h4>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <p> adipisicing elit. Numquam earum vel </p>
+                <p> officiis eveniet veritatis!</p>
+            </div>
+        </div>
     </div>
 </body>
 
