@@ -188,7 +188,7 @@
         section.first>div {
             display: flex;
             flex-direction: column;
-            padding: 34px 0px;
+            padding-bottom: 34px;
         }
 
         section.first>div :nth-child(1) {
