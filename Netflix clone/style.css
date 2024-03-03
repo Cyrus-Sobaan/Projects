@@ -38,7 +38,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 100px;
+            height: 100px   ;
         }
 
         nav img {
@@ -72,19 +72,19 @@
         .hero> :nth-child(1) {
             font-family: 'Poppins', sans-serif;
             font-weight: bolder;
-            font-size: 48px;
+            font-size: 4.8rem;
             text-align: center;
         }
 
         .hero> :nth-child(2) {
             font-weight: 400;
-            font-size: 20px;
+            font-size: 2rem;
             text-align: center;
         }
 
         .hero> :nth-child(3) {
             font-weight: bold;
-            font-size: 20px;
+            font-size: 2rem;
             text-align: center;
         }
 
@@ -104,7 +104,7 @@
             margin-right: 20px;
             border-radius: 4px;
             cursor: pointer;
-            font-size: 14px;
+            font-size: 1rem;
 
         }
 
@@ -119,14 +119,14 @@
             border-color: red;
             color: white;
             padding: 10px 27px;
-            font-size: 20px;
+            font-size: 1.5rem;
             border-radius: 4px;
         }
 
         .main input {
             background-color: rgba(23, 23, 23, 0.6);
             padding: 14px 101px 14px 14px;
-            font-size: 15px;
+            font-size: 1.3rem;
             border-radius: 4px;
 
             border: 1px solid rgba(255, 255, 255, 0.4);
@@ -150,7 +150,7 @@
             align-items: center;
         }
 
-        @media screen and (max-width:1217px) {
+        @media screen and (max-width:1200px) {
 
             .first {
                 flex-wrap: wrap;
@@ -192,13 +192,13 @@
         }
 
         section.first>div :nth-child(1) {
-            font-size: 48px;
+            font-size: 2.3rem;
             font-weight: bolder;
         }
 
 
         section.first>div :nth-child(2) {
-            font-size: 24px;
+            font-size: 1rem;
 
         }
 
@@ -274,7 +274,7 @@
         }
 
         .footer-items a {
-            font-size: 14px;
+            font-size: 1rem;
             color: rgb(154, 149, 149);
 
         }
@@ -287,7 +287,7 @@
             color: white;
             border-radius: 4px;
             cursor: pointer;
-            font-size: 14px;
+            font-size: 1rem;
         }
 
         @media screen and (max-width: 1300px) {
@@ -309,15 +309,15 @@
             }
 
             .hero> :nth-child(1) {
-                font-size: 32px;
+                font-size: 2rem;
             }
 
             .hero> :nth-child(2) {
-                font-size: 18px;
+                font-size: 1rem;
             }
 
             .hero> :nth-child(3) {
-                font-size: 18px;
+                font-size: 1rem;
             }
 
             .hero-buttons {
@@ -330,7 +330,7 @@
 
             .faq h2 {
                 text-align: center;
-                font-size: 32px;
+                font-size: 2rem;
             }
 
             footer {
