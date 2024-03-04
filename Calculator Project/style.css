@@ -58,8 +58,8 @@
         color: greenyellow;
     }
     @media only screen and (min-width:  380px) {
-        div#calculator{
-            flex-direction: column;
-            align-items: center;
+        .calculator{
+            
+            
             }
     
