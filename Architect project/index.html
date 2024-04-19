@@ -10,6 +10,7 @@
     * {
         padding: 0;
         margin: 0;
+       
     }
 
     header {
@@ -17,26 +18,32 @@
         height: 8vh;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        font-size: 1.3rem;
+        font-family: s;
 
 
     }
 
- 
+
 
     button {
         border: none;
         padding: 10px 30px;
         margin: 10px -2px;
+     background-color: white;
+
     }
 
     button:hover {
-        background-color: rgb(124, 122, 122);
-        color: white;
+        
+        background-color: rgb(192, 192, 192);
     }
 
     a {
         text-decoration: none;
-        color: white;
+        color:black;
+        background-color: rgb(192, 192, 192);   
 
     }
 </style>
@@ -45,9 +52,9 @@
     <header>
         <p> <strong>BR</strong> Architects</p>
         <nav>
-            <button> <a href="#">Project</a></button>
-            <button> <a href="#">About</a></button>
-            <button><a href="#">Contact</a></button>
+            <a href="#"> <button> Project</button></a>
+            <a href="#">  <button> About</button></a>
+            <a href="#"> <button>Contact</button></a>
         </nav>
 
     </header>
