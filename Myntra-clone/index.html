@@ -4,49 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
-  <style>
-    * {
-      margin: 0;
-      padding: 0px;
-      font-family:  Arial, sans-serif;
-     
-    }
-    header {
-      border: 0px solid black;
-      box-shadow: 0px 1px 10px 0px rgb(227, 226, 226);
-      background-color: #fff;
-      height: 70px;
-    }
-    nav {
-      border: 0px solid black;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      padding-top: 8px;
-      gap: 20px;
-    }
-    nav img {
-      width: 70px;
-    }
-    nav a {
-      text-decoration: none;
-      color: black;
-    }
-    nav sup{
-        color: red;
-    }
-    nav input{
-        width: 30vw;
-        height: 4.5vh;
-        color: rgb(177, 177, 177);
-        background-color: rgba(235, 234, 234, 0.76);
-        border: 0px;
-        padding: 0px 10px;
-    }
-  </style>
-  
+
   <body>
     <header>
       <nav>
@@ -57,8 +21,36 @@
         <a href="HOME">HOME & LIVING</a>
         <a href="BEAUTY">BEAUTY</a>
         <a href="STUDIO">STUDIO <sup>new</sup></a>
-        <input type="text"  placeholder="Search for products, brands and more"/>
+        <div class="search-box">
+          <span class="material-symbols-outlined search-bar"> search </span>
+          <input
+            class="search-bar"
+            type="text"
+            placeholder="Search for products, brands and more"
+          />
+        </div>
+        <div class="action-container">
+          <span class="material-symbols-outlined">
+            person
+            </span>
+          <span class="action-name">Profile</span>
+        </div>
+
+        <div class="action-container">
+          <span class="material-symbols-outlined">
+            person
+            </span>
+          <span class="action-name">Wishlist</span>
+        </div>
+
+        <div class="action-container">
+          <span class="material-symbols-outlined">
+            person
+            </span>
+          <span class="action-name">Bags</span>
+        </div>
       </nav>
+      
     </header>
 
     <main></main>

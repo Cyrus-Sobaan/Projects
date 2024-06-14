@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif;
+}
+header {
+  border: 0px solid black;
+  box-shadow: 0px 1px 10px 0px rgb(227, 226, 226);
+  background-color: #fff;
+  height: 70px;
+}
+nav {
+  border: 0px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+  gap: 10px;
+  margin:0% 4%;
+}
+nav img {
+  width: 60px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 700 ;
+}
+nav sup {
+  color: red;
+}
+.search-box{
+    border: 0px solid black;
+    flex-grow: 0.1;
+    display: flex;
+   
+    
+}
+.search-bar{
+    padding: 3px 5px;
+    color: rgb(177, 177, 177);
+    background-color: rgba(235, 234, 234, 0.76);
+   
+}
+
+nav input {
+  width: 30vw;
+  height: 4.5vh;
+  color: rgb(177, 177, 177);
+  background-color: rgba(235, 234, 234, 0.76);
+  border: 0px;
+  padding: 0px 10px;
+}
+.action-container{
+    width: 20px;
+}
