@@ -141,6 +141,11 @@ button p{
   border-radius: 10px;
   line-height: 80%;
 }
+button img{
+  width: 25px;
+  float: left;
+  margin: 7px 0px;
+}
 
 .column-p p{
   padding-bottom: 20px;
