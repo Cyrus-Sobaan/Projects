@@ -28,7 +28,7 @@ nav a {
   color: black;
   font-size: 12px;
   font-weight: 700;
-  border-bottom: 2px solid #ffffff);
+  border-bottom: 2px solid #ffffff;
   padding:23px 0px;
 }
 nav a:hover {
@@ -84,3 +84,64 @@ nav input {
   max-height: 5em;
   font-weight: 700;
 } 
+
+.category-items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+.items{
+  width: 250px;
+}
+
+
+/*footer starts here*/
+
+.footer-container{
+  
+  width: 70%;
+  margin: auto;
+  padding: 30px 0px 40px 10px;
+  background: #FAFBFC;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+.column h3{
+ color: #282c3f;
+ font-size: 14px;
+ margin-bottom: 25px;
+}
+
+.column a{
+  color: #696b79;
+  font-size: 15px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+}
+button p{
+  font-size: 10px;
+  
+}
+.buttons button{
+  background-color:black;
+  color: white;
+  font-size: 18px;
+  padding: 3px 10px;
+  border-radius: 10px;
+  line-height: 80%;
+}
+
+.column-p p{
+  padding-bottom: 20px;
+}
