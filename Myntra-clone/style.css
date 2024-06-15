@@ -10,15 +10,21 @@ header {
   box-shadow: 0px 1px 10px 0px rgb(227, 226, 226);
   background-color: #fff;
   height: 80px;
+  display: flex;
+  justify-content: center;
+  
+  align-items: center;
 }
 nav {
+  box-sizing: content-box;
   border: 0px solid black;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 16px;
+
   gap: 10px;
-  margin: 0% 4%;
+  margin: 0% 2%;
+  width: 100%;
 }
 nav img {
   width: 60px;
@@ -29,7 +35,7 @@ nav a {
   font-size: 12px;
   font-weight: 700;
   border-bottom: 2px solid #ffffff;
-  padding:23px 0px;
+  padding: 31px 0px;
 }
 nav a:hover {
   border-bottom: 2px solid rgb(235, 26, 26);
@@ -50,14 +56,17 @@ nav sup {
 }
 
 nav input {
-  width: 30%;
-  min-width: 450px;
+  
+ width: 350px;
   height: 4.5vh;
   color: rgb(177, 177, 177);
   background-color: rgba(235, 234, 234, 0.76);
-  border: 0px;
+  border:0px;
   padding: 0px 10px;
 }
+
+  
+
 .action-container {
   display: flex;
   justify-content: space-between;
@@ -69,84 +78,81 @@ nav input {
 
 /*Main banner Starts here*/
 
-.banner{
+.banner {
   margin: 30px 0px;
 }
-.banner img{
+.banner img {
   width: 100%;
 }
-.category-heading{
+.category-heading {
   text-transform: uppercase;
   color: #3e4152;
-  letter-spacing: .15em;
+  letter-spacing: 0.15em;
   font-size: 1.5em;
   margin: 50px 0 10px 30px;
   max-height: 5em;
   font-weight: 700;
-} 
+}
 
-.category-items{
+.category-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-
 }
-.items{
+.items {
   width: 250px;
 }
 
-
 /*footer starts here*/
 
-.footer-container{
-  
+.footer-container {
   width: 70%;
   margin: auto;
   padding: 30px 0px 40px 10px;
-  background: #FAFBFC;
+  background: #fafbfc;
   display: flex;
   justify-content: space-evenly;
 }
 
-.column{
+.column {
   display: flex;
   flex-direction: column;
 }
-.column h3{
- color: #282c3f;
- font-size: 14px;
- margin-bottom: 25px;
+.column h3 {
+  color: #282c3f;
+  font-size: 14px;
+  margin-bottom: 25px;
 }
 
-.column a{
+.column a {
   color: #696b79;
   font-size: 15px;
   text-decoration: none;
   padding-bottom: 5px;
 }
 
-.buttons{
+.buttons {
   display: flex;
   justify-content: space-between;
 }
-button p{
+button p {
   font-size: 10px;
-  
 }
-.buttons button{
-  background-color:black;
+.buttons button {
+  background-color: black;
   color: white;
   font-size: 18px;
   padding: 3px 10px;
   border-radius: 10px;
   line-height: 80%;
 }
-button img{
+button img {
   width: 25px;
   float: left;
   margin: 7px 0px;
 }
 
-.column-p p{
+.column-p p {
   padding-bottom: 20px;
 }
+
