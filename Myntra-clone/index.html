@@ -1,52 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-  </head>
-
-  <body>
+<head>
+    <title>Myntra Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
     <header>
-      <nav>
-        <img src=assets/myntra_logo.webp alt="">
-        <a href="MEN">MEN</a>
-        <a href="WOMEN">WOMEN</a>
-        <a href="KIDS">KIDS</a>
-        <a href="HOME">HOME & LIVING</a>
-        <a href="BEAUTY">BEAUTY</a>
-        <a href="STUDIO">STUDIO <sup>new</sup></a>
-        <div class="search-box">
-          <span class="material-symbols-outlined search-bar"> search </span>
-          <input
-            class="search-bar"
-            type="text"
-            placeholder="Search for products, brands and more"
-          />
+        <div class="logo_container">
+            <a href="#"><img class="myntra_home" src="assets/myntra_logo.webp" alt="Myntra Home"></a>
         </div>
+        <nav class="nav_bar">
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+            <a href="#">Home & Living</a>
+            <a href="#">Beauty</a>
+            <a href="#">Studio <sup>New</sup></a>
+        </nav>
+        <div class="search_bar">
+            <span class="material-symbols-outlined search_icon">search</span>
+            <input class="search_input" placeholder="Search for products, brands and more">
+        </div>
+        <div class="action_bar">
+            <div class="action_container">
+                <span class="material-symbols-outlined action_icon">person</span>
+                <span class="action_name">Profile</span>
+            </div>
 
-        <div class="action-container">
-          <span class="material-symbols-outlined action"> person </span>
-          <span class="action-name">Profile</span>
-        </div>
+            <div class="action_container">
+                <span class="material-symbols-outlined action_icon">favorite</span>
+                <span class="action_name">Wishlist</span>
+            </div>
 
-        <div class="action-container">
-          <span class="material-symbols-outlined action"> favorite </span>
-          <span class="action-name">Wishlist</span>
+            <div class="action_container">
+                <span class="material-symbols-outlined action_icon">shopping_bag</span>
+                <span class="action_name">Bag</span>
+            </div>
         </div>
-
-        <div class="action-container">
-          <span class="material-symbols-outlined action"> shopping_bag </span>
-          <span class="action-name">Bags</span>
-        </div>
-      </nav>
     </header>
-
     <main>
       <div class="banner">
         <img src="assets/banner.jpg" alt="Main banner" />
