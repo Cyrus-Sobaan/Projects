@@ -12,7 +12,7 @@ header {
   height: 80px;
   display: flex;
   justify-content: center;
-  
+
   align-items: center;
 }
 nav {
@@ -134,22 +134,32 @@ nav input {
 .buttons {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
+  
 }
 button p {
   font-size: 10px;
+  
 }
 .buttons button {
   background-color: black;
   color: white;
   font-size: 18px;
-  padding: 3px 10px;
+  padding: 3px 20px;
   border-radius: 10px;
   line-height: 80%;
+  
+}
+.buttons button:hover{
+  cursor: pointer;
+ 
 }
 button img {
-  width: 25px;
+  width: 22px;
   float: left;
-  margin: 7px 0px;
+  margin:2px -20px  ;
+  
+  
 }
 
 .column-p p {
