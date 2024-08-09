@@ -1,309 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@codewith_muhilan</title>
     <title>My portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
+    <style>
+      body,
+      html,
+      #app {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
 
-</head>
-<style>
-    * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        font-family: poppins, sans-serif;
-    }
+      #app {
+        overflow: hidden;
+      }
 
-    body {
-        color: #dedede;
-        background: rgb(0, 1, 37);
-    }
-
-    .header {
+      #app canvas {
+        display: block;
         position: fixed;
+        z-index: -1;
         top: 0;
-        left: 0;
-        width: 100%;
-        padding: 20px 10%;
-        background: transparent;
-        display: flex;
-        justify-content: space-between;
+      }
+
+      #source-link {
+        top: 60px;
+      }
+
+      #source-link > i {
+        color: rgb(34, 52, 218);
+      }
+
+      #yt-link {
+        top: 10px;
+      }
+
+      #yt-link > i {
+        color: rgb(91, 31, 219);
+      }
+
+      .meta-link {
         align-items: center;
-        z-index: 100;
-    }
-
-    .logo {
-        position: relative;
-        font-size: 30px;
-        color: #fff;
-        text-decoration: none;
-        font-weight: 700;
-        cursor: default;
-        opacity: 0;
-        animation: slideRight 1s ease forwards;
-    }
-
-    .navbar a {
-        display: inline-block;
-        font-size: 25px;
-        color: #fff;
-        text-decoration: none;
-        font-weight: 500;
-        margin-left: 35px;
-        transition: .3s;
-        opacity: 0;
-        animation: slideTop .5s ease forwards;
-        animation-delay: calc(.2s * var(--i));
-    }
-
-    .navbar a:hover {
-        color: #0ef;
-
-    }
-
-    .home {
-        position: relative;
-        width: 100%;
-        justify-content: space-between;
-        height: 100vh;
-        background: rgb(0, 1, 37);
-        background-size: cover;
-        display: flex;
-        align-items: center;
-        padding: 70px 10% 0;
-    }
-
-    .home-content {
-        max-width: 600px;
-    }
-
-    .home-content h3 {
-        font-size: 32px;
-        font-weight: 700;
-        opacity: 0;
-        animation: slideBottom 1s ease forwards;
-        animation-delay: .7s
-    }
-
-    .home-content h3:nth-of-type(2) {
-        margin-bottom: 30px;
-        animation: slideTop 1s ease forwards;
-        animation-delay: .7s;
-    }
-
-    .home-content h3 span {
-        color: #0ef;
-    }
-
-    .home-content h1 {
-        font-size: 56px;
-        font-weight: 700;
-        margin: -3px 0;
-        opacity: 0;
-        animation: slideRight 1s ease forwards;
-        animation-delay: .1s
-    }
-
-    .home-content p {
-        font-size: 20px;
-        opacity: 0;
-        animation: slideLeft 1s ease forwards;
-        animation-delay: .1s
-    }
-
-    .home-sci a {
+        backdrop-filter: blur(3px);
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 6px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
         display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        background: transparent;
-        border: 2px solid #0ef;
-        border-radius: 50%;
-        font-size: 20px;
-        color: #0ef;
+        gap: 5px;
+        left: 10px;
+        padding: 10px 20px;
+        position: fixed;
         text-decoration: none;
-        margin: 30px 15px 30px 0;
-        transition: .5s ease;
-        opacity: 0;
-        animation: slideLeft 1s ease forwards;
-        animation-delay: calc(.2s * var(--i));
-    }
+        transition: background-color 600ms, border-color 600ms;
+        z-index: 10000;
+      }
 
-    .home-sci a:hover {
-        background: #0ef;
-        color: #081b29;
-        box-shadow: 0 0 20px #0ef;
-    }
+      .meta-link:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
 
-    .btn-box {
-        display: inline-block;
-        padding: 12px 28px;
-        background: #0ef;
-        border-radius: 40px;
-        font-size: 16px;
-        color: #081b29;
-        letter-spacing: 1px;
-        text-decoration: none;
-        font-weight: 600;
-        opacity: 0;
-        animation: slideTop 1s ease forwards;
-        animation-delay: 2s;
-        box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+      .meta-link > i,
+      .meta-link > span {
+        height: 20px;
+        line-height: 20px;
+      }
 
-    }
+      .meta-link > span {
+        color: white;
+        font-family: "Rubik", sans-serif;
+        transition: color 600ms;
+      }
+    </style>
+</head>
 
-    .btn-box:hover {
-        box-shadow: 0 0 5px cyan,
-            0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+  <body>
+<!-- Header start here -->
+<header class="header">
+    <a href="#" class="logo">PORTFOLIO</a>
 
-    }
+    <nav class="navbar">
+        <a href="#home" style="--i:1" class="active ">Home</a>
+        <a href="#" style="--i:2">About</a>
+        <a href="#" style="--i:3">Skill</a>
+        <a href="#" style="--i:4">Portfolio</a>
+        <a href="#" style="--i:5">Contact </a>
+    </nav>
+</header>
+<!-- Header ends here -->
 
-    @keyframes slideRight {
-        0% {
-            transform: translateX(-100px);
-            opacity: 0;
-        }
-
-        100% {
-            transform: translateX(0px);
-            opacity: 1;
-        }
-    }
-
-    @keyframes slideLeft {
-        0% {
-            transform: translateX(100px);
-            opacity: 0;
-        }
-
-        100% {
-            transform: translateX(0px);
-            opacity: 1;
-        }
-    }
-
-    @keyframes slideTop {
-        0% {
-            transform: translateY(100px);
-            opacity: 0;
-        }
-
-        100% {
-            transform: translateY(0px);
-            opacity: 1;
-        }
-    }
-
-    @keyframes slideBottom {
-        0% {
-            transform: translateY(-100px);
-            opacity: 0;
-        }
-
-        100% {
-            transform: translateY(0px);
-            opacity: 1;
-        }
-    }
-
-    .about {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        gap: 1.5rem;
-    }
-
-    .about-img img {
-        padding-bottom: 20%;
-        max-width: 630px;
-        height: auto;
-        width: 100%;
-        border-radius: 8px;
-    }
-
-    .about-text h2 {
-        font-size: 60px;
-    }
-
-    .about-text h2 span {
-        color: #0ef;
-    }
-
-    .about-text h4 {
-        font-size: 30px;
-    }
-
-    .about-text p {
-        line-height: 25px;
-        margin-bottom: 20px;
-    }
-</style>
-
-<body>
-    <!-- Header start here -->
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-
-        <nav class="navbar">
-            <a href="#" style="--i:1" class="active ">Home</a>
-            <a href="#" style="--i:2">About</a>
-            <a href="#" style="--i:3">Skill</a>
-            <a href="#" style="--i:4">Portfolio</a>
-            <a href="#" style="--i:5">Contact </a>
-        </nav>
-    </header>
-    <!-- Header ends here -->
-
-    <!-- Section One Starts Here -->
-    <section class="home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Soman Ali</h1>
-            <h3>And I'm a <span class="text"></span> </h3>
-            <p>I'm a Full Stack Web Developer with extensive experience for 1 year.
-                expertise is to create website and application from scratch,
-                <br> and many more.....
-            </p>
-            <div class="home-sci">
-                <a href="#" style="--i:6"><i class='bx bxl-facebook'></i></a>
-                <a href="#" style="--i:7"><i class='bx bxl-linkedin'></i></a>
-                <a href="#" style="--i:8"><i class='bx bxl-whatsapp'></i></a>
-                <a href="#" style="--i:9"><i class='bx bxl-github'></i></a>
-            </div>
-            <a href="#" class="btn-box">More About Me</a>
+<!-- Section One Starts Here -->
+<section class="home">
+    <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Soman Ali</h1>
+        <h3>And I'm a <span class="text"></span> </h3>
+        <p>I'm a Full Stack Web Developer with extensive experience for 1 year.
+            expertise is to create website and application from scratch,
+            <br> and many more.....
+        </p>
+        <div class="home-sci">
+            <a href="#" style="--i:6"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.linkedin.com/in/sobaan-qureshi/ " style="--i:7" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="mailto:sobaanqureshi1@gmail.com" style="--i:8" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://github.com/Cyrus-Sobaan" style="--i:9" target="_blank"><i class='bx bxl-github'></i></a>
         </div>
-    </section>
-    <!-- Section One Ends Here -->
+        <a href="#" class="btn-box">More About Me</a>
+    </div>
+</section>
+<!-- Section One Ends Here -->
 
-    <!-- Section Two Starts Here-->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="" alt="">
-        </div>
-        <div class="about-text">
-            <h2>About <span>Me</span></h2>
-            <h4>Full Stack Developer</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum amet minima rerum natus laborum incidunt
-                doloremque, facere dignissimos ipsa, fugiat error ea, expedita magni id et illum delectus! Ducimus non,
-                mollitia consequatur animi autem velit, ipsa quos perspiciatis officiis vel, numquam quidem veniam!
-                Possimus error impedit.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum amet minima rerum
-                natus laborum incidunt
-                doloremque, facere dignissimos ipsa, fugiat error ea, expedita magni id et illum delectus! Ducimus non,
-                mollitia consequatur animi autem velit, ipsa quos perspiciatis officiis vel, numquam quidem veniam!
-                Possimus error impedit. </p>
-            <a href="#" class="btn-box">More About Me </a>
-        </div>
+<!-- Section Two Starts Here-->
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="" alt="">
+    </div>
+    <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <h4>Full Stack Developer</h4>
+        <p>Hi there! I'm Soman Ali, a web developer with a passion for building visually appealing and user-friendly websites. With expertise in both front-end and back-end technologies like HTML, CSS, JavaScript, React, and Node.js, I love turning creative ideas into digital solutions. I enjoy tackling complex problems and continuously learning new technologies. Let's connect and create something amazing together!
 
-    </section>
-    <!-- Section Two Ends Here-->
+         I'm excited about the opportunity to contribute to your team and grow as a web developer. </p>
+        <a href="#" class="btn-box">More About Me </a>
+    </div>
+
+</section>
+<!-- Section Two Ends Here-->
 
 
-    <script src="script.js"></script>
-</body>
+<script src="script.js"></script>
 
+
+
+
+
+
+
+
+    <!--Cursor pointer code-->
+    <div id="app">
+      <canvas></canvas>
+    </div>
+
+    <script type="module">
+      //import the particle curser
+      import { particlesCursor } from "https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js";
+
+      const pc = particlesCursor({
+        el: document.getElementById("app"),
+        gpgpuSize: 512,
+        colors: [0x00fffc, 0x0000ff], // Changed pink color to #00fffc and blue color
+        color: 0x000ffc,
+        coordScale: 0.5,
+        noiseIntensity: 0.005,
+        noiseTimeCoef: 0.0001,
+        pointSize: 1.5, // Lighter particle thickness
+        pointDecay: 0.0025,
+        sleepRadiusX: 250,
+        sleepRadiusY: 250,
+        sleepTimeCoefX: 0.001,
+        sleepTimeCoefY: 0.002,
+      });
+    </script>
+  </body>
 </html>
