@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+
+
+.container{
+    box-sizing: border-box;
+}
+header{
+    border: 1px solid rgb(138, 138, 138);
+    box-shadow: 0px 0px 0px 1px;
+    box-sizing: border-box;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    
+
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: black;
+   margin: 0 10px;
+}
+
+.nav-second{
+    display: flex;
+    
+}
+
+
+
